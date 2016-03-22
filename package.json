@@ -4,8 +4,8 @@
   "description": "Front End Pre Webpack",
   "main": "index.js",
   "scripts": {
-    "start": "eval $(cat dev.env) webpack-dev-server --inline --hot",
-    "build": "eval $(cat dev.env) webpack",
+    "start": "eval $(cat .env) webpack-dev-server --inline --hot",
+    "build": "eval $(cat .env) webpack",
     "update-webdriver": "webdriver-manager update --standalone",
     "webdriver": "webdriver-manager start",
     "e2e": "protractor",
