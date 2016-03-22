@@ -10,6 +10,11 @@ const app = angular.module('myApp', [
   angularRouter
 ]);
 
+app.config(['$stateProvider','$urlRouterProvider', function($stateProvider,$urlRouterProvider) {
+  $urlRouterProvider.otherwise('/');
+}])
+
+
 angular.element(document).ready(function() {
   angular.bootstrap(document, ['myApp']);
 });
