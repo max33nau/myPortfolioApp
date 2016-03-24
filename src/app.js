@@ -5,7 +5,6 @@ import './style/main.scss';
 /* Vendors */
 import angular from 'angular' ;
 import angularRouter from 'angular-ui-router';
-
 /* Directives */
 import directives from './components/directives';
 

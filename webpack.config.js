@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require( 'html-webpack-plugin' );
 const path = require('path');
 const publicPath = path.resolve(__dirname,'../mJacobsenPortfolio/public');
 
+
 module.exports = {
   entry: './src/app.js',
   output: {
@@ -30,7 +31,7 @@ module.exports = {
       },
       {
 	      test: /\.scss$/,
-        loaders: ['style', 'css', 'postcss', 'sass']
+        loaders: ['style', 'css', 'postcss', 'sass', ]
       },
       {
         test: /\.js?$/,
