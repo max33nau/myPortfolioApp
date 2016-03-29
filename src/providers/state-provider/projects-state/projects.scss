@@ -1,0 +1,35 @@
+.projects {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.projectContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+
+.projectListImage {
+  width: 200px;
+  border: solid 1px black;
+  margin-top: 10px;
+}
+
+.projectListInfo {
+  color: #fff;
+  width: 200px;
+  max-width: 100%;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: #404F5E;
+  border-radius: 10%;
+  a {
+    color: #A0EDFF;
+    &:visited{
+      color: #A0EDFF;
+    }
+    text-decoration: underline;
+  }
+}

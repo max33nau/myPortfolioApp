@@ -1,11 +1,11 @@
 <nav>
-  <div >
-    <ul class="pure-menu-list">
-      <li><a ui-sref="home"> Home </a></li>
-      <li><a ui-sref="projects"> Projects </a></li>
-      <li><a ui-sref="resume"> Resume </a></li>
-      <li><a ui-sref="aboutMe"> About Me </a></li>
-      <li><a ui-sref="contactMe"> Contact Me </a></li>
+  <div>
+    <ul>
+      <li><a ng-class='{active: root.activeLink == "home"}' ui-sref="home"> Home </a></li>
+      <li><a ng-class='{active: root.activeLink == "aboutMe"}' ui-sref="aboutMe"> About Me </a></li>
+      <li><a ng-class='{active: root.activeLink == "resume"}' ui-sref="resume"> Resume </a></li>
+      <li><a ng-class='{active: root.activeLink == "projects"}' ui-sref="projects"> Projects </a></li>
+      <li><a ng-class='{active: root.activeLink == "contactMe"}' ui-sref="contactMe"> Contact Me </a></li>
     </ul>
   </div>
 </nav>

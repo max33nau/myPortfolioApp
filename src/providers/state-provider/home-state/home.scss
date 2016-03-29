@@ -1,0 +1,60 @@
+.main-page-img {
+  width: 300px;
+  height: 400px;
+  max-width: 100%;
+  margin: 10px;
+  border: solid 5px black;
+  border-radius: 10%;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 400px;
+  max-width: 100%;
+  text-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.fade-away {
+  -webkit-animation: fadeAway 1s 2s 1 linear forwards; /* Safari 4+ */
+  -moz-animation:    fadeAway 1s 2s 1 linear forwards; /* Fx 5+ */
+  -o-animation:      fadeAway 1s 2s 1 linear forwards; /* Opera 12+ */
+  animation:         fadeAway 1s 2s 1 linear forwards; /* IE 10+, Fx 29+ */
+}
+
+@-webkit-keyframes fadeAway {
+  from {opacity: 1;} to {opacity: 0;}
+}
+@-moz-keyframes fadeAway {
+  from {opacity: 1;} to {opacity: 0;}
+}
+@-o-keyframes fadeAway {
+  from {opacity: 1;} to {opacity: 0;}
+}
+@keyframes fadeAway {
+  from {opacity: 1;} to {opacity: 0;}
+}
+
+.fade-in {
+  opacity: 0;
+  -webkit-animation: fadeIn 3s 3s 1 linear forwards;
+  -moz-animation:    fadeIn 3s 3s 1 linear forwards;
+  -o-animation:      fadeIn 3s 3s 1 linear forwards;
+  animation:         fadeIn 3s 3s 1 linear forwards;
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} to {opacity: 1;}
+}
+@-moz-keyframes fadeIn {
+  from {opacity: 0;} to {opacity: 1;}
+}
+@-o-keyframes fadeIn {
+  from {opacity: 0;} to {opacity: 1;}
+}
+@keyframes fadeIn {
+  from {opacity: 0;} to {opacity: 1;}
+}

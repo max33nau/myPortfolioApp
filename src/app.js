@@ -23,7 +23,14 @@ const app = angular.module('myApp', [
 app.config(['$stateProvider','$urlRouterProvider', function($stateProvider,$urlRouterProvider) {
   $urlRouterProvider.otherwise('/');
   configStateProvider($stateProvider);
-}]);
+}])
+.run( function($rootScope, $state) {
+    $rootScope.root = {};
+    $rootScope.root.activeLink= '';
+    $rootScope.$on('$stateChangeStart', function (event,toState) {
+      $rootScope.root.activeLink = toState.name;
+    });
+});
 
 
 angular.element(document).ready(function() {

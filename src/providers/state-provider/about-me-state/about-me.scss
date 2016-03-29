@@ -1,0 +1,14 @@
+.profilePic {
+  display: block;
+  max-width: 150px;
+  margin: 0 auto 30px;
+  border-radius: 100%;
+}
+
+.text-link {
+  color: #001A87;
+  &:visited{
+    color: #001A87;
+  }
+  font-weight: bold;
+}

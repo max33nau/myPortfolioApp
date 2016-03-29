@@ -1,3 +1,108 @@
+@import 'themes/style-assets';
+
+/****** BASE ******/
+body {
+  font-family: $body-font;
+}
+#container {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+a {
+  text-decoration: none;
+}
+
+h3 {
+  margin: 0 0 1em 0;
+}
+
+
+/****** HEADER ******/
+header {
+  margin: 0 0 30px 0;
+  padding: 5px 0 0 0;
+  width: 100%;
+}
+#logo {
+  text-align: center;
+  margin: 0;
+  h1 {
+    font-family: $decorative-font;
+    margin: 15px 0;
+    font-size: 1.75em;
+    font-weight: bolder;
+  }
+}
+
+/****** NAVIGATION ******/
+nav {
+  text-align: center;
+  padding: 10px 0;
+  margin: 20px 0 0;
+  ul {
+    list-style: none;
+    margin: 0 10px;
+  }
+  li {
+    display: inline-block;
+  }
+
+  a {
+    font-family: $decorative-font;
+    font-weight: normal;
+    font-size: .75em;
+    padding:10px;
+  }
+}
+
+/****** FOOTER ******/
+footer {
+  font-size: 0.75em;
+  clear: both;
+  text-align: center;
+  padding-top: 50px;
+}
+
+/****** Colors ******/
+body {
+  background: $body-background-color;
+}
+
+// Site Title
+#logo {
+  h1 {
+    color: $header-title-color;
+  }
+}
+
+// Header
+header {
+  background-color: $header-background-color;
+  border-color: $header-border-color;
+}
+
+// Navigation
+nav {
+  background: $header-border-color;
+  a {
+    color: $nav-link-color;
+    &:visited {
+      color: $nav-link-color;
+    }
+    &.active {
+      color: $nav-link-active-color;
+    }
+  }
+}
+
+footer {
+  color: $footer-color;
+}
+
+
+
+/****** Alignment ******/
 .center {
   text-align: center;
   margin: 0 auto;
