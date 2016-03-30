@@ -1,3 +1,8 @@
+.home-page {
+  display: block;
+  height: 400px;
+}
+
 .main-page-img {
   width: 300px;
   height: 400px;
@@ -9,6 +14,9 @@
 
 .content {
   display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
   justify-content: center;
   margin: 0 auto;
   width: 400px;
@@ -18,11 +26,18 @@
   flex-wrap: wrap;
 }
 
+#turned {
+  width: 300px;
+  height: 400px;
+  margin: auto;
+  max-width: 100%;
+}
+
 .fade-away {
-  -webkit-animation: fadeAway 1s 2s 1 linear forwards; /* Safari 4+ */
-  -moz-animation:    fadeAway 1s 2s 1 linear forwards; /* Fx 5+ */
-  -o-animation:      fadeAway 1s 2s 1 linear forwards; /* Opera 12+ */
-  animation:         fadeAway 1s 2s 1 linear forwards; /* IE 10+, Fx 29+ */
+  -webkit-animation: fadeAway 1s 1s 1 linear forwards; /* Safari 4+ */
+  -moz-animation:    fadeAway 1s 1s 1 linear forwards; /* Fx 5+ */
+  -o-animation:      fadeAway 1s 1s 1 linear forwards; /* Opera 12+ */
+  animation:         fadeAway 1s 1s 1 linear forwards; /* IE 10+, Fx 29+ */
 }
 
 @-webkit-keyframes fadeAway {
@@ -40,10 +55,10 @@
 
 .fade-in {
   opacity: 0;
-  -webkit-animation: fadeIn 3s 3s 1 linear forwards;
-  -moz-animation:    fadeIn 3s 3s 1 linear forwards;
-  -o-animation:      fadeIn 3s 3s 1 linear forwards;
-  animation:         fadeIn 3s 3s 1 linear forwards;
+  -webkit-animation: fadeIn 2s 1 linear forwards;
+  -moz-animation:    fadeIn 2s 1 linear forwards;
+  -o-animation:      fadeIn 2s 1 linear forwards;
+  animation:         fadeIn 2s 1 linear forwards;
 }
 
 @-webkit-keyframes fadeIn {
@@ -57,4 +72,16 @@
 }
 @keyframes fadeIn {
   from {opacity: 0;} to {opacity: 1;}
+}
+
+.fade-in.first {
+-webkit-animation-delay: 3s;
+-moz-animation-delay: 3s;
+animation-delay: 3s;
+}
+
+.fade-in.second {
+-webkit-animation-delay: 5s;
+-moz-animation-delay: 5s;
+animation-delay: 5s;
 }
