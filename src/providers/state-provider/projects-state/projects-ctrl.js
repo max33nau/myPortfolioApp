@@ -3,7 +3,7 @@ import style from './projects.scss';
 'use strict';
 export default function(ngModule) {
   ngModule.controller('projectsCtrl',['$scope', function($scope) {
-    $scope.styles = style;
+    $scope.style = style;
     $scope.projects = [
       {
         title: 'Relax and Color',

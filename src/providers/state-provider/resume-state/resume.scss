@@ -1,0 +1,39 @@
+.resume {
+  p, li {
+    font-size: .8em;
+  }
+}
+
+.resume-info {
+  text-align: center;
+  margin: 0 auto;
+  h2 {
+    padding: 5px;
+    margin: 0;
+  }
+  ul {
+    margin: 0;
+    padding: 0 0 0 0;
+    list-style: none;
+    margin-bottom: 20px;
+  }
+  li {
+    display: inline-block;
+    padding: 0 5px;
+    border-right: solid 2px black;
+  }
+}
+
+.resume-subject-header {
+  margin: 5px 0;
+}
+
+.resume-subject-child-header {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.resume-subject-list {
+  margin: 2px 0;
+  list-style: circle;
+}

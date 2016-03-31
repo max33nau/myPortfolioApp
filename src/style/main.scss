@@ -69,6 +69,14 @@ body {
   background: $body-background-color;
 }
 
+// Links
+a {
+  color: #001A87;
+  &:visited{
+    color: #001A87;
+  }
+}
+
 // Site Title
 #logo {
   h1 {
@@ -95,6 +103,7 @@ nav {
     }
   }
 }
+
 
 footer {
   color: $footer-color;

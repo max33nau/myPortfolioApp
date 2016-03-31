@@ -1,11 +1,17 @@
+@import '../../../style/themes/fonts.scss';
 .home-page {
   display: block;
   height: 400px;
 }
 
+.home-header {
+  font-family: $shadow-font;
+  margin: 5px;
+}
+
 .main-page-img {
-  width: 300px;
-  height: 400px;
+  width: 280px;
+  height: 350px;
   max-width: 100%;
   margin: 10px;
   border: solid 5px black;
@@ -29,10 +35,14 @@
 #turned {
   width: 300px;
   height: 400px;
+  position: absolute;
+  left: -150%;
   margin: auto;
   max-width: 100%;
+  font-family: $fast-font;
 }
 
+// Fade a image away
 .fade-away {
   -webkit-animation: fadeAway 1s 1s 1 linear forwards; /* Safari 4+ */
   -moz-animation:    fadeAway 1s 1s 1 linear forwards; /* Fx 5+ */
@@ -53,6 +63,8 @@
   from {opacity: 1;} to {opacity: 0;}
 }
 
+
+// Fade in image
 .fade-in {
   opacity: 0;
   -webkit-animation: fadeIn 2s 1 linear forwards;
@@ -74,14 +86,28 @@
   from {opacity: 0;} to {opacity: 1;}
 }
 
-.fade-in.first {
--webkit-animation-delay: 3s;
--moz-animation-delay: 3s;
-animation-delay: 3s;
+.fade-in.delay {
+  -webkit-animation-delay: 5.5s;
+  -moz-animation-delay: 5.5s;
+  animation-delay: 5.5s;
 }
 
-.fade-in.second {
--webkit-animation-delay: 5s;
--moz-animation-delay: 5s;
-animation-delay: 5s;
+// Fly in text
+.fly-in {
+  -webkit-animation: flyIn 2.5s 2s 1 ease-out forwards; /* Safari 4+ */
+  -moz-animation:    flyIn 2.5s 2s 1 ease-out forwards; /* Fx 5+ */
+  -o-animation:      flyIn 2.5s 2s 1 ease-out forwards; /* Opera 12+ */
+  animation:         flyIn 2.5s 2s 1 ease-out forwards; /* IE 10+, Fx 29+ */
+}
+@-webkit-keyframes flyIn {
+  from {left: -150%;} to {left: 0; right: 0; }
+}
+@-moz-keyframes flyIn {
+  from {left: -150%;} to {left: 0; right: 0; }
+}
+@-o-keyframes flyIn {
+  from {left: -150%;} to {left: 0; right: 0; }
+}
+@keyframes flyIn {
+  from {left: -150%;} to {left: 0; right: 0; }
 }
