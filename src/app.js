@@ -1,6 +1,7 @@
 'use strict';
 /* Styling */
 import './style/main.scss';
+import './style/state/responsive.scss';
 
 /* Vendors */
 import angular from 'angular' ;

@@ -1,0 +1,36 @@
+@import '../themes/style-assets';
+
+@media screen and (min-width: 480px) {
+  /****** Contact Me 2 column layout ******/
+  #primary {
+    float: left;
+    width: 50%;
+  }
+
+  #secondary {
+    width: 40%;
+    float: right;
+  }
+
+}
+
+@media screen and (min-width: 790px) {
+  header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: 5px solid $header-border-color;
+    margin-bottom: 60px;
+  }
+
+  #logo {
+    margin-left: 2%;
+  }
+  nav {
+    margin: auto 10px;;
+    background: none;
+    font-size: 1.125em;
+    text-align: right;
+  }
+
+}

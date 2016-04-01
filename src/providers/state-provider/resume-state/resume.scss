@@ -25,15 +25,19 @@
 }
 
 .resume-subject-header {
-  margin: 5px 0;
+  margin: 10px 0;
 }
 
+.resume-subject-child {
+  font-size: .8em;
+  margin-bottom: 10px;
+}
 .resume-subject-child-header {
-  margin-bottom: 0;
-  padding-bottom: 0;
+  font-weight: bolder;
+  font-style: italic;
 }
 
 .resume-subject-list {
-  margin: 2px 0;
+  margin-top: -8px;
   list-style: circle;
 }
