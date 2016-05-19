@@ -1,5 +1,5 @@
 <div class='projectContainer'>
-  <div class='projectListInfo' ng-repeat='project in projects'>
+  <div class='projectListInfo' ng-repeat='project in projects | orderBy:"-id"'>
     <div>{{project.title}} </div>
     <img class='projectListImage' ng-src={{project.src}}> </img>
     <div><a href={{project.url}} target="_blank"> Click here to go to website </a> </div>
