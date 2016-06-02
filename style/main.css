@@ -1,0 +1,70 @@
+/******** MAIN NAVIGATION ********/
+.nav-icon {
+  padding-right: 5px;
+}
+/******** END NAVIGATION ********/
+
+
+/******** MAIN ALIGNMENTS ********/
+.align-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/******** END ALIGNMENTS ********/
+
+
+/******** FRONT PAGE BANNER ********/
+.banner-img {
+  width: 100%;
+  background-image: url('../img/portlandBackground.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/******** END OF FRONT PAGE BANNER ********/
+
+
+
+/******** MAIN COLORS ********/
+/* Retrieved from my custom Color palette generator that I built called color fish (https://team-malex.2016.angularattack.io/#/color-fish) */
+.gondola-background { /* dark purple color */
+  background-color: rgba(38, 15, 40, 1) !important;
+}
+
+.gondola-color { /* dark purple color */
+  color: rgba(38, 15, 40, 1) !important;
+}
+.new-york-pink-background {
+  background-color: rgba(217, 133, 113, 1) !important;
+}
+.new-york-pink-color {
+  color: rgba(217, 133, 113, 1) !important;*/
+}
+.dorado-background { /* light purple */
+  background-color: rgba(104, 87, 195, 1) !important;
+}
+.dorado-color { /* light purple */
+  color: rgba(104, 87, 195, 1) !important;
+}
+.crown-of-thorns-background { /* dark red */
+  background-color: rgba(131, 41, 49, 1) !important;
+}
+.crown-of-thorns-color { /* dark red */
+  color: rgba(131, 41, 49, 1) !important;
+}
+.mountain-mist-background { /* faded purple */
+  background-color: rgba(158, 151, 226, 1) !important;
+}
+.mountain-mist-color { /* faded purple */
+  color: rgba(158, 151, 226, 1) !important;
+}
+
+.sun-yellow-color {
+  color: rgba(251, 187, 15, 1) !important;
+}
+/******** END COLORS ********/
